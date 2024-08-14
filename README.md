@@ -1,8 +1,6 @@
 # Habit Sync
 
-Habit Sync is a versatile habit tracking app designed to help users build and maintain healthy habits. The app provides a user-friendly interface to track daily habits, visualize progress through heat maps, and manage habit-related data efficiently.
-
-![Logo](assets/logo.png)
+Habit Sync is a versatile habit-tracking app designed to help users build and maintain healthy habits. The app provides a user-friendly interface to track daily habits, visualize progress through heat maps, and manage habit-related data efficiently.
 
 
 
@@ -67,7 +65,7 @@ flutter run
 
    You can download the latest release APK file from the following link:
 
-   [Download Habit Sync APK](https://example.com/path-to-your-apk-file)
+   [Download Habit Sync APK](https://github.com/junii03/HabitSync/releases/download/Pre-release/app-release.apk)
 
 2. **Install the APK**
 
