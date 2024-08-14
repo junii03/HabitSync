@@ -62,6 +62,19 @@ To start using Habit Sync, simply run the app on your preferred device or emulat
 flutter run
 ```
 
+## APK Installation
+1. **Download the APK**
+
+   You can download the latest release APK file from the following link:
+
+   [Download Habit Sync APK](https://example.com/path-to-your-apk-file)
+
+2. **Install the APK**
+
+    - Transfer the APK file to your Android device.
+    - Open the file on your device to begin the installation process.
+    - Follow the prompts to install the app.
+
 ### Creating a New Habit
 
 1. Tap the "+" button on the home screen.
