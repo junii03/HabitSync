@@ -135,7 +135,7 @@ I welcome contributions to Habit Sync! To contribute:
 
 
 
-
+# While I was learning about Flutter, I developed this app. It wasn't my original idea.
 
 
 
