@@ -65,7 +65,7 @@ flutter run
 
    You can download the latest release APK file from the following link:
 
-   [Download Habit Sync APK](https://github.com/junii03/HabitSync/releases/download/Pre-release/app-release.apk)
+   [Download Habit Sync APK](https://github.com/junii03/HabitSync/releases/download/beta-release/app-release.apk)
 
 2. **Install the APK**
 
