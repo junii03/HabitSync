@@ -32,6 +32,9 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var orientation = MediaQuery.of(context).orientation;
+    bool isLandscape = orientation == Orientation.landscape;
+
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
@@ -56,16 +59,33 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Stack(
         children: [
-          Opacity(
-            opacity: 0.1,
-            child: Image.asset(
-              'assets/logo.png',
-              fit: BoxFit.contain,
-              color: Theme.of(context).colorScheme.surface.withOpacity(0.1),
-              // Optional: Add some opacity
-              colorBlendMode: BlendMode.srcATop,
-            ),
-          ),
+          isLandscape
+              ? Center(
+                  child: Opacity(
+                    opacity: 0.2,
+                    child: Image.asset(
+                      'assets/logo.png',
+                      fit: BoxFit.contain,
+                      color: Theme.of(context)
+                          .colorScheme
+                          .surface
+                          .withOpacity(0.1),
+                      // Optional: Add some opacity
+                      colorBlendMode: BlendMode.srcATop,
+                    ),
+                  ),
+                )
+              : Opacity(
+                  opacity: 0.2,
+                  child: Image.asset(
+                    'assets/logo.png',
+                    fit: BoxFit.contain,
+                    color:
+                        Theme.of(context).colorScheme.surface.withOpacity(0.1),
+                    // Optional: Add some opacity
+                    colorBlendMode: BlendMode.srcATop,
+                  ),
+                ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: ListView(

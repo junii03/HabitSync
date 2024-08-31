@@ -15,7 +15,7 @@ class MyHeatMap extends StatelessWidget {
 
     // Define colors based on theme
     final Map<int, Color> colorsets = {
-      1: Colors.teal.shade100,
+      1: Colors.teal.shade200,
       2: Colors.teal.shade300,
       3: Colors.teal.shade500,
       4: Colors.teal.shade700,
@@ -27,8 +27,10 @@ class MyHeatMap extends StatelessWidget {
       endDate: DateTime.now(),
       datasets: datasets,
       colorMode: ColorMode.color,
-      defaultColor: colorScheme.surface, // Matches the surface color from the theme
-      textColor: textTheme.headlineLarge!.color, // Matches the text color from the theme
+      defaultColor:
+          colorScheme.surface, // Matches the surface color from the theme
+      textColor: textTheme
+          .headlineLarge!.color, // Matches the text color from the theme
       fontSize: 15,
       showText: true,
       scrollable: true,
