@@ -1,30 +1,24 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'package:habbit_tracker/theme/dark_theme.dart';
-import 'package:habbit_tracker/theme/light_theme.dart';
 
 class ThemeProvider extends ChangeNotifier {
-  // initially in light mode
-  ThemeData _themeData = lightMode;
+  ThemeMode _themeMode = ThemeMode.system;
 
-  // get current theme
-  ThemeData get themeData => _themeData;
+  ThemeMode get themeMode => _themeMode;
 
-  bool get isDark => _themeData == darkMode;
+  bool get isDarkMode =>
+      _themeMode == ThemeMode.dark ||
+      (_themeMode == ThemeMode.system &&
+          PlatformDispatcher.instance.platformBrightness == Brightness.dark);
 
-  // set Theme
-  set themeData(ThemeData themData) {
-    _themeData = themData;
+  set themeMode(ThemeMode mode) {
+    _themeMode = mode;
     notifyListeners();
   }
 
-  // toggle theme
-  void toggleTheme() {
-    if (_themeData == lightMode) {
-      _themeData = darkMode;
-    } else {
-      _themeData = lightMode;
-    }
+  void setTheme(ThemeMode mode) {
+    _themeMode = mode;
     notifyListeners();
   }
-
 }
