@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:habbit_tracker/database/habit_database.dart';
 import 'package:habbit_tracker/pages/home_page.dart';
+import 'package:habbit_tracker/theme/dark_theme.dart';
+import 'package:habbit_tracker/theme/light_theme.dart';
 import 'package:habbit_tracker/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -26,10 +28,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProvider>(context);
     return MaterialApp(
-      theme: Provider.of<ThemeProvider>(context).themeData,
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
+      theme: lightMode,
+      darkTheme: darkMode,
+      themeMode: themeProvider.themeMode,
     );
   }
 }
